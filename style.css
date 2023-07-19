@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white1: #fff;
+    --white: #9e6062;
+    --dark1: #170100;
+    --dark2: #240100;
+    --dark3: #2e0100;
+    --dark4: #410d13;
+    --dark5: #5f282c;
+    --cyan1: #7e4346;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #7e4346;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5f282c;
+
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #240100;
+}
+
+
+
+body {
+    background-color: #5f282c;
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #240100;
+    height: 10vh;
+    padding: 0 2.5rem;
+}
+
+.box-img-header {
+    height: 100%;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--white1);
+
+}
+
+.nav-links:hover {
+    color: var(--white);
+    transition: .4s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    max-width: 100vw;
+    height: 90vh;
+}
+
+.person {
+    display: flex;
+    gap: 1rem;
+    min-width: 300px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.box-img-main {
+    width: 50%;
+}
+
+
+h1 {
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong {
+    color: var(--white);
+}
+
+.first-section p {
+    color: var(--white1);
+}
+
+.box-img-main {
+    max-width: 350px;
+    padding: 1rem;
+    display: flex;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second-section {
+
+    background-color: var(--dark5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.fourth-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #9e6062;
+}
+
+.second-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.second-section ul li {
+    color: #410d13;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.second-section ul li:hover {
+    color: #fff;
+    transition: .4s;
+    cursor: default;
+
+
+}
+
+.title {
+    color: var(--dark4);
+    margin-top: 20px;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+    text-decoration: underline;
+
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100vw;
+    margin-bottom: 11rem;
+
+}
+
+.third-section>div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.third-section>div img {
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.about {
+    color: #9e6062;
+    padding: 0 2rem;
+}
+
+.third-section>div p {
+    max-width: 600px;
+    color: #fff;
+    text-align: justify;
+}
+
+#my-projects-list {
+    column-count: 3;
+    column-gap: 2em;
+    color: #fff;
+    padding: 0 0 2rem 0;
+}
+
+
+
+footer {
+    display: flex;
+    gap: 1rem;
+    height: 0vh;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    background-color: #240100;
+
+
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.textofooter {
+    color: var(--white);
+}
+
+.final {
+    color: #fff
+}
+
+.img-who-am-i {
+    height: 60vh;
+}
+
+:is(.img-profile, .img-who-am-i) {
+    box-shadow: 6px 6px 6px 6px var(--white);
+}
+
+
+.six-section-p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px dashed #2e0100;
+    border-radius: 15px;
+    padding: 10px 40px 10px 40px;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #410d13;
+    text-align: justify;
+
+}
+
+.six-section-strong {
+    color: var(--white1);
+    font-style: italic;
+    font-weight: 100;
+}
